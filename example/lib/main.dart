@@ -97,6 +97,16 @@ class MainScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           IconButton(
+                            icon: Icon(Icons.fast_rewind),
+                            iconSize: 64.0,
+                            onPressed: _audioHandler.rewind,
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.fast_forward),
+                            iconSize: 64.0,
+                            onPressed: _audioHandler.fastForward,
+                          ),
+                          IconButton(
                             icon: Icon(Icons.skip_previous),
                             iconSize: 64.0,
                             onPressed: mediaItem == queue.first
